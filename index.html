@@ -25,6 +25,9 @@
   <!-- Theme Style -->
   <link rel="stylesheet" href="css/style.css">
   <style>
+    html {
+      scroll-behavior: smooth !important;
+    }
     .navbar-nav .nav-link {
       font-family: 'Montserrat', sans-serif !important;
       text-transform: uppercase !important;
@@ -493,6 +496,15 @@
     }
 
     initAnnouncements();
+
+    // Close mobile menu on hash-link click
+    $(document).ready(function() {
+      $('.navbar-nav a[href^="#"]').on('click', function() {
+        if ($('.navbar-toggler').is(':visible')) {
+          $('.navbar-collapse').collapse('hide');
+        }
+      });
+    });
   </script>
 </body>
 
