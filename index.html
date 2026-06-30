@@ -1,394 +1,436 @@
 <!doctype html>
 <html lang="sk">
-  <head>
-    <title>Tomi Štúdio | Pánske kaderníctvo a Barber Levoča</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Tomi Štúdio - profesionálne pánske kaderníctvo a holičstvo v Levoči. Ponúkame moderné strihy, úpravu brady a prémiovú starostlivosť.">
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin-ext" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&subset=latin-ext&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&subset=latin-ext&display=swap" rel="stylesheet">
+<head>
+  <title>Tomi Štúdio | Pánske kaderníctvo a Barber Levoča</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description"
+    content="Tomi Štúdio - profesionálne pánske kaderníctvo a holičstvo v Levoči. Ponúkame moderné strihy, úpravu brady a prémiovú starostlivosť.">
 
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&subset=latin-ext&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&subset=latin-ext&display=swap"
+    rel="stylesheet">
 
-    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
-    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
 
-    <!-- Theme Style -->
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-      .navbar-nav .nav-link {
-        font-family: 'Montserrat', sans-serif !important;
-        text-transform: uppercase !important;
-        letter-spacing: 0.25em !important;
-        font-size: 12px !important;
-        font-weight: 500 !important;
-        transition: 0.3s all ease;
-      }
+  <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+  <!-- Theme Style -->
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .navbar-nav .nav-link {
+      font-family: 'Montserrat', sans-serif !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.25em !important;
+      font-size: 12px !important;
+      font-weight: 500 !important;
+      transition: 0.3s all ease;
+    }
+
+    .site-hero.overlay h1.hero-title {
+      font-family: 'Kaushan Script', cursive !important;
+      font-size: 85px !important;
+      color: #fff !important;
+      line-height: 1.2 !important;
+      margin-bottom: 20px !important;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5) !important;
+      text-transform: none !important;
+      /* Keep original casing */
+    }
+
+    @media (max-width: 768px) {
       .site-hero.overlay h1.hero-title {
-        font-family: 'Kaushan Script', cursive !important;
-        font-size: 85px !important;
-        color: #fff !important;
-        line-height: 1.2 !important;
-        margin-bottom: 20px !important;
-        text-shadow: 2px 2px 8px rgba(0,0,0,0.5) !important;
-        text-transform: none !important; /* Keep original casing */
+        font-size: 45px !important;
       }
-      @media (max-width: 768px) {
-        .site-hero.overlay h1.hero-title {
-          font-size: 45px !important;
-        }
+    }
+
+    /* Quick Info Block Custom Styling & Mobile Responsiveness */
+    .quick-info {
+      position: relative;
+      margin-top: -140px !important;
+      /* Pull higher on desktop */
+      z-index: 9;
+    }
+
+    .quick-info .bgcolor {
+      background: #000 !important;
+      padding: 40px 30px 40px 30px !important;
+      /* Add generous padding */
+      border-radius: 8px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    }
+
+    .quick-info .bgcolor:before {
+      display: none !important;
+      /* Turn into a beautiful floating card */
+    }
+
+    .quick-info .row {
+      justify-content: center;
+    }
+
+    @media (max-width: 991.98px) {
+      .quick-info {
+        margin-top: -60px !important;
+        /* Safe overlap for mobile */
+        padding: 0 20px !important;
       }
 
-      /* Quick Info Block Custom Styling & Mobile Responsiveness */
-      .quick-info {
-        position: relative;
-        margin-top: -140px !important; /* Pull higher on desktop */
-        z-index: 9;
-      }
       .quick-info .bgcolor {
-        background: #000 !important;
-        padding: 40px 30px 40px 30px !important; /* Add generous padding */
-        border-radius: 8px;
-        box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+        padding: 30px 20px 10px 20px !important;
       }
-      .quick-info .bgcolor:before {
-        display: none !important; /* Turn into a beautiful floating card */
+
+      .quick-info .media {
+        margin-bottom: 25px;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
       }
-      .quick-info .row {
-        justify-content: center;
-      }
-      
-      @media (max-width: 991.98px) {
-        .quick-info {
-          margin-top: -60px !important; /* Safe overlap for mobile */
-          padding: 0 20px !important;
-        }
-        .quick-info .bgcolor {
-          padding: 30px 20px 10px 20px !important;
-        }
-        .quick-info .media {
-          margin-bottom: 25px;
-          text-align: center;
-          flex-direction: column;
-          align-items: center;
-        }
-        .quick-info .media .mr-3 {
-          margin-right: 0 !important;
-          margin-bottom: 10px;
-        }
-      }
-      .news-card {
-        background: #f8f9fa;
-        border-left: 5px solid #ff6d24;
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 4px;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-      }
-      .news-date {
-        font-size: 0.85rem;
-        color: #ff6d24;
-        font-weight: bold;
-        margin-bottom: 5px;
-      }
-      .news-title {
-        font-size: 1.25rem;
-        font-weight: bold;
-        color: #000;
+
+      .quick-info .media .mr-3 {
+        margin-right: 0 !important;
         margin-bottom: 10px;
       }
-      .news-content {
-        color: #666;
-        line-height: 1.6;
-      }
-      .review-badge {
-        background: #fff;
-        padding: 15px;
-        border-radius: 8px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        display: inline-block;
-        margin-top: 15px;
-      }
-      .review-stars {
-        color: #f1c40f;
-        font-size: 1.2rem;
-        margin-bottom: 5px;
-      }
-    </style>
-  </head>
-  <body>
-    
-    <header role="banner">
-      <nav class="navbar navbar-expand-md navbar-dark bg-light">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">Tomi Štúdio</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+    }
 
-          <div class="collapse navbar-collapse navbar-light" id="navbarsExample05">
-            <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
-              <li class="nav-item">
-                <a class="nav-link active" href="index.html">Domov</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#oznamy">Oznamy</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#kontakt">Kontakt</a>
-              </li>
-            </ul>
+    .news-card {
+      background: #f8f9fa;
+      border-left: 5px solid #ff6d24;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .news-date {
+      font-size: 0.85rem;
+      color: #ff6d24;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .news-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #000;
+      margin-bottom: 10px;
+    }
+
+    .news-content {
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .review-badge {
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      display: inline-block;
+      margin-top: 15px;
+    }
+
+    .review-stars {
+      color: #f1c40f;
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header role="banner">
+    <nav class="navbar navbar-expand-md navbar-dark bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Tomi Štúdio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
+          aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse navbar-light" id="navbarsExample05">
+          <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Domov</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#oznamy">Oznamy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontakt">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- END header -->
+
+  <section class="site-hero overlay" data-stellar-background-ratio="0.5"
+    style="background-image: url(images/big_image_1.png);">
+    <div class="container">
+      <div class="row align-items-center site-hero-inner justify-content-center">
+        <div class="col-md-8 text-center">
+          <div class="mb-5 element-animate">
+            <h1 class="hero-title">Tomi Štúdio</h1>
+            <p class="lead">Profesionálne pánske kaderníctvo a holičstvo v Levoči</p>
           </div>
         </div>
-      </nav>
-    </header>
-    <!-- END header -->
+      </div>
+    </div>
+  </section>
+  <!-- END section -->
 
-    <section class="site-hero overlay" data-stellar-background-ratio="0.5" style="background-image: url(images/big_image_1.png);">
-      <div class="container">
-        <div class="row align-items-center site-hero-inner justify-content-center">
-          <div class="col-md-8 text-center">
-            <div class="mb-5 element-animate">
-              <h1 class="hero-title">Tomi Štúdio</h1>
-              <p class="lead">Profesionálne pánske kaderníctvo a holičstvo v Levoči</p>
+  <section class="quick-info element-animate" data-animate-effect="fadeInLeft">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 bgcolor">
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <div class="media">
+                <div class="mr-3 icon-wrap"><span class="icon ion-ios-telephone"></span></div>
+                <div class="media-body">
+                  <h5>+421 915 281 678</h5>
+                  <p>Bez objednávania (na počkanie)</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="media">
+                <div class="mr-3 icon-wrap"><span class="icon ion-location"></span></div>
+                <div class="media-body">
+                  <h5>Gustáva Hermana 1</h5>
+                  <p>054 01 Levoča, Slovensko</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="media">
+                <div class="mr-3 icon-wrap"><span class="icon ion-android-time"></span></div>
+                <div class="media-body">
+                  <h5>Ut - Pia: 9:00 - 17:00</h5>
+                  <p>Sobota: 9:00 - 12:00 <br> Ne - Po: Zatvorené</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- END section -->
+    </div>
+  </section>
+  <!-- END section -->
 
-    <section class="quick-info element-animate" data-animate-effect="fadeInLeft">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 bgcolor">
-            <div class="row">
-              <div class="col-md-4 mb-3">
-                <div class="media">
-                  <div class="mr-3 icon-wrap"><span class="icon ion-ios-telephone"></span></div>
-                  <div class="media-body">
-                    <h5>+421 915 281 678</h5>
-                    <p>Bez objednávania (na počkanie)</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 mb-3">
-                <div class="media">
-                  <div class="mr-3 icon-wrap"><span class="icon ion-location"></span></div>
-                  <div class="media-body">
-                    <h5>Gustáva Hermana 1</h5>
-                    <p>054 01 Levoča, Slovensko</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 mb-3">
-                <div class="media">
-                  <div class="mr-3 icon-wrap"><span class="icon ion-android-time"></span></div>
-                  <div class="media-body">
-                    <h5>Ut - Pia: 9:00 - 17:00</h5>
-                    <p>Sobota: 9:00 - 12:00 <br> Ne - Po: Zatvorené</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+  <!-- OZNAMY / NOVINKY SECTION -->
+  <section id="oznamy" class="site-section bg-light">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-7 text-center">
+          <h2>Aktuálne oznamy &amp; Novinky</h2>
+          <p class="lead">Sledujte dôležité informácie o zmenách otváracích hodín, dovolenkách a novinkách v našom
+            salóne.</p>
         </div>
       </div>
-    </section>
-    <!-- END section -->
+      <div class="row justify-content-center">
+        <div class="col-md-9" id="announcements-container">
+          <!-- Loading state -->
+          <div class="text-center py-5" id="announcements-loading">
+            <div class="spinner-border text-primary" role="status">
+              <span class="sr-only">Načítavam...</span>
+            </div>
+            <p class="mt-2 text-muted">Načítavam aktuálne oznamy...</p>
+          </div>
+          <!-- Dynamic items will go here -->
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- OZNAMY / NOVINKY SECTION -->
-    <section id="oznamy" class="site-section bg-light">
-      <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-7 text-center">
-            <h2>Aktuálne oznamy &amp; Novinky</h2>
-            <p class="lead">Sledujte dôležité informácie o zmenách otváracích hodín, dovolenkách a novinkách v našom salóne.</p>
+  <section class="site-section" id="kontakt">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-5">
+          <h3>Kde nás nájdete</h3>
+          <p class="lead mb-4">Gustáva Hermana 1, 054 01 Levoča</p>
+
+          <!-- Map Embed -->
+          <div class="embed-responsive embed-responsive-16by9 mb-4"
+            style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+            <iframe class="embed-responsive-item"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m2!1d2616.505963578768!2d20.587843076899476!3d49.02476598934524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473e3bc9b6910609%3A0xe54e604f3bb9ff7a!2zR3VzdMOhdmEgSGVybWFuYSAxLCAwNTQgMDEgTGV2b8SNYQ!5e0!3m2!1ssk!2ssk!4v1719750000000!5m2!1ssk!2ssk"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <!-- Review Badge -->
+          <div class="review-badge text-center">
+            <div class="review-stars">
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <h5 class="mb-0"><strong>4,9 / 5</strong> na Google</h5>
+            <p class="text-muted mb-0" style="font-size: 0.9rem;">(69 overených recenzií)</p>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md-9" id="announcements-container">
-            <!-- Loading state -->
-            <div class="text-center py-5" id="announcements-loading">
-              <div class="spinner-border text-primary" role="status">
-                <span class="sr-only">Načítavam...</span>
+
+        <div class="col-md-6 pl-md-5">
+          <h3>Kontaktujte nás</h3>
+          <p class="mb-4">Fungujeme bez objednávania – stačí prísť. V prípade otázok nás môžete kontaktovať telefonicky.
+            Tešíme sa na vašu návštevu!</p>
+
+          <ul class="list-unstyled">
+            <li class="mb-3 d-flex align-items-center">
+              <span class="mr-3 text-primary" style="font-size: 1.5rem;"><span
+                  class="icon ion-ios-telephone"></span></span>
+              <div>
+                <strong>Telefón:</strong><br>
+                <a href="tel:+421915281678" style="font-size: 1.2rem; font-weight: bold; color: #ff6d24;">+421 915 281
+                  678</a>
               </div>
-              <p class="mt-2 text-muted">Načítavam aktuálne oznamy...</p>
-            </div>
-            <!-- Dynamic items will go here -->
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="site-section" id="kontakt">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 mb-5">
-            <h3>Kde nás nájdete</h3>
-            <p class="lead mb-4">Gustáva Hermana 1, 054 01 Levoča</p>
-            
-            <!-- Map Embed -->
-            <div class="embed-responsive embed-responsive-16by9 mb-4" style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-              <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m2!1d2616.505963578768!2d20.587843076899476!3d49.02476598934524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473e3bc9b6910609%3A0xe54e604f3bb9ff7a!2zR3VzdMOhdmEgSGVybWFuYSAxLCAwNTQgMDEgTGV2b8SNYQ!5e0!3m2!1ssk!2ssk!4v1719750000000!5m2!1ssk!2ssk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-
-            <!-- Review Badge -->
-            <div class="review-badge text-center">
-              <div class="review-stars">
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
+            </li>
+            <li class="mb-3 d-flex align-items-center">
+              <span class="mr-3 text-primary" style="font-size: 1.5rem;"><span
+                  class="icon ion-ios-location"></span></span>
+              <div>
+                <strong>Adresa:</strong><br>
+                Gustáva Hermana 1, 054 01 Levoča
               </div>
-              <h5 class="mb-0"><strong>4,9 / 5</strong> na Google</h5>
-              <p class="text-muted mb-0" style="font-size: 0.9rem;">(69 overených recenzií)</p>
-            </div>
-          </div>
-          
-          <div class="col-md-6 pl-md-5">
-            <h3>Kontaktujte nás</h3>
-            <p class="mb-4">Fungujeme bez objednávania – stačí prísť. V prípade otázok nás môžete kontaktovať telefonicky. Tešíme sa na vašu návštevu!</p>
-            
-            <ul class="list-unstyled">
-              <li class="mb-3 d-flex align-items-center">
-                <span class="mr-3 text-primary" style="font-size: 1.5rem;"><span class="icon ion-ios-telephone"></span></span>
-                <div>
-                  <strong>Telefón:</strong><br>
-                  <a href="tel:+421915281678" style="font-size: 1.2rem; font-weight: bold; color: #ff6d24;">+421 915 281 678</a>
-                </div>
-              </li>
-              <li class="mb-3 d-flex align-items-center">
-                <span class="mr-3 text-primary" style="font-size: 1.5rem;"><span class="icon ion-ios-location"></span></span>
-                <div>
-                  <strong>Adresa:</strong><br>
-                  Gustáva Hermana 1, 054 01 Levoča
-                </div>
-              </li>
-              <li class="mb-3 d-flex align-items-center">
-                <span class="mr-3 text-primary" style="font-size: 1.5rem;"><span class="icon ion-android-time"></span></span>
-                <div>
-                  <strong>Otváracie hodiny:</strong><br>
-                  Utorok - Piatok: 9:00 - 17:00<br>
-                  Sobota: 9:00 - 12:00<br>
-                  Nedeľa a Pondelok: Zatvorené
-                </div>
-              </li>
-            </ul>
-          </div>
+            </li>
+            <li class="mb-3 d-flex align-items-center">
+              <span class="mr-3 text-primary" style="font-size: 1.5rem;"><span
+                  class="icon ion-android-time"></span></span>
+              <div>
+                <strong>Otváracie hodiny:</strong><br>
+                Utorok - Piatok: 9:00 - 17:00<br>
+                Sobota: 9:00 - 12:00<br>
+                Nedeľa a Pondelok: Zatvorené
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
-    <!-- END section -->
-    
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md-6">
-            <h3 class="mb-4">Tomi Štúdio</h3>
-            <p class="mb-4">Vaše obľúbené kaderníctvo a holičstvo v Levoči. Profesionálny strih, úprava brady a skvelý servis.</p>
-          </div>
-          <div class="col-md-3">
-            <h3 class="mb-4">Rýchle odkazy</h3>
-            <ul class="list-unstyled">
-              <li><a href="#oznamy">Oznamy &amp; Novinky</a></li>
-              <li><a href="#kontakt">Kontakt</a></li>
-              <li><a href="admin.html">Administrácia</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h3 class="mb-4">Sociálne siete</h3>
-            <p>
-              <a href="#" class="p-2" style="font-size: 1.5rem;"><span class="fa fa-facebook-square"></span></a>
-              <a href="#" class="p-2" style="font-size: 1.5rem;"><span class="fa fa-instagram"></span></a>
-            </p>
-          </div>
+    </div>
+  </section>
+  <!-- END section -->
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-6">
+          <h3 class="mb-4">Tomi Štúdio</h3>
+          <p class="mb-4">Vaše obľúbené kaderníctvo a holičstvo v Levoči. Profesionálny strih, úprava brady a skvelý
+            servis.</p>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md-7 text-center">
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> Všetky práva vyhradené | Tomi Štúdio | Made by <a href="https://websolution4you.sk" target="_blank">WebSolution4you</a>
-          </div>
+        <div class="col-md-3">
+          <h3 class="mb-4">Rýchle odkazy</h3>
+          <ul class="list-unstyled">
+            <li><a href="#oznamy">Oznamy &amp; Novinky</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+            <li><a href="admin.html">Administrácia</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3 class="mb-4">Sociálne siete</h3>
+          <p>
+            <a href="#" class="p-2" style="font-size: 1.5rem;"><span class="fa fa-facebook-square"></span></a>
+            <a href="#" class="p-2" style="font-size: 1.5rem;"><span class="fa fa-instagram"></span></a>
+          </p>
         </div>
       </div>
-    </footer>
-    <!-- END footer -->
-    
-    <!-- loader -->
-    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#ff6d24"/></svg></div>
+      <div class="row justify-content-center">
+        <div class="col-md-7 text-center">
+          Copyright &copy;
+          <script>document.write(new Date().getFullYear());</script> Všetky práva vyhradené | Tomi Štúdio | Made by <a
+            href="https://teliolabs.sk" target="_blank">TelioLabs</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- END footer -->
 
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/jquery-migrate-3.0.0.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/magnific-popup-options.js"></script>
-    <script src="js/main.js"></script>
+  <!-- loader -->
+  <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#ff6d24" />
+    </svg></div>
 
-    <!-- Script to dynamically load announcements -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        const container = document.getElementById("announcements-container");
-        const loading = document.getElementById("announcements-loading");
-        
-        // Load from localStorage for mockup fallback, we will update this to Firebase/GCP step-by-step
-        const localAnnouncements = localStorage.getItem("tomi_studio_announcements");
-        let announcements = [];
-        
-        if (localAnnouncements) {
-          try {
-            announcements = JSON.parse(localAnnouncements);
-          } catch(e) {
-            console.error(e);
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.0.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/magnific-popup-options.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Script to dynamically load announcements -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const container = document.getElementById("announcements-container");
+      const loading = document.getElementById("announcements-loading");
+
+      // Load from localStorage for mockup fallback, we will update this to Firebase/GCP step-by-step
+      const localAnnouncements = localStorage.getItem("tomi_studio_announcements");
+      let announcements = [];
+
+      if (localAnnouncements) {
+        try {
+          announcements = JSON.parse(localAnnouncements);
+        } catch (e) {
+          console.error(e);
+        }
+      } else {
+        // Default mock announcements
+        announcements = [
+          {
+            id: "1",
+            date: new Date().toLocaleDateString("sk-SK"),
+            title: "Zmena otváracích hodín počas sviatkov",
+            content: "Vážení zákazníci, počas nadchádzajúcich sviatkov budeme mať zatvorené. Opäť sa na vás tešíme v bežných otváracích hodinách od pondelka. Prajeme vám príjemné prežitie sviatkov."
+          },
+          {
+            id: "2",
+            date: new Date().toLocaleDateString("sk-SK"),
+            title: "Tomi Štúdio - Nová webová stránka",
+            content: "Spustili sme pre vás novú, modernú webovú prezentáciu! Nájdete tu vždy aktuálne otváracie hodiny, dôležité oznamy, zoznam služieb a presnú polohu na mape."
           }
-        } else {
-          // Default mock announcements
-          announcements = [
-            {
-              id: "1",
-              date: new Date().toLocaleDateString("sk-SK"),
-              title: "Zmena otváracích hodín počas sviatkov",
-              content: "Vážení zákazníci, počas nadchádzajúcich sviatkov budeme mať zatvorené. Opäť sa na vás tešíme v bežných otváracích hodinách od pondelka. Prajeme vám príjemné prežitie sviatkov."
-            },
-            {
-              id: "2",
-              date: new Date().toLocaleDateString("sk-SK"),
-              title: "Tomi Štúdio - Nová webová stránka",
-              content: "Spustili sme pre vás novú, modernú webovú prezentáciu! Nájdete tu vždy aktuálne otváracie hodiny, dôležité oznamy, zoznam služieb a presnú polohu na mape."
-            }
-          ];
-          localStorage.setItem("tomi_studio_announcements", JSON.stringify(announcements));
-        }
+        ];
+        localStorage.setItem("tomi_studio_announcements", JSON.stringify(announcements));
+      }
 
-        // Hide loading
-        if (loading) loading.style.display = "none";
-        
-        if (announcements.length === 0) {
-          container.innerHTML = `<div class="text-center text-muted py-4">Momentálne nie sú k dispozícii žiadne oznamy.</div>`;
-          return;
-        }
+      // Hide loading
+      if (loading) loading.style.display = "none";
 
-        // Render announcements
-        announcements.forEach(item => {
-          const card = document.createElement("div");
-          card.className = "news-card";
-          card.innerHTML = `
+      if (announcements.length === 0) {
+        container.innerHTML = `<div class="text-center text-muted py-4">Momentálne nie sú k dispozícii žiadne oznamy.</div>`;
+        return;
+      }
+
+      // Render announcements
+      announcements.forEach(item => {
+        const card = document.createElement("div");
+        card.className = "news-card";
+        card.innerHTML = `
             <div class="news-date">${item.date}</div>
             <div class="news-title">${item.title}</div>
             <div class="news-content">${item.content.replace(/\n/g, '<br>')}</div>
           `;
-          container.appendChild(card);
-        });
+        container.appendChild(card);
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
+
 </html>
