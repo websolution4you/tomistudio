@@ -54,22 +54,19 @@
     /* Quick Info Block Custom Styling & Mobile Responsiveness */
     .quick-info {
       position: relative;
-      margin-top: -140px !important;
-      /* Pull higher on desktop */
+      margin-top: -180px !important; /* Pull higher since it has more height now */
       z-index: 9;
     }
 
     .quick-info .bgcolor {
       background: #000 !important;
-      padding: 40px 30px 40px 30px !important;
-      /* Add generous padding */
+      padding: 35px 40px !important;
       border-radius: 8px;
       box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
     }
 
     .quick-info .bgcolor:before {
       display: none !important;
-      /* Turn into a beautiful floating card */
     }
 
     .quick-info .row {
@@ -78,25 +75,11 @@
 
     @media (max-width: 991.98px) {
       .quick-info {
-        margin-top: -60px !important;
-        /* Safe overlap for mobile */
+        margin-top: -100px !important;
         padding: 0 20px !important;
       }
-
       .quick-info .bgcolor {
-        padding: 30px 20px 10px 20px !important;
-      }
-
-      .quick-info .media {
-        margin-bottom: 25px;
-        text-align: center;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .quick-info .media .mr-3 {
-        margin-right: 0 !important;
-        margin-bottom: 10px;
+        padding: 25px 20px !important;
       }
     }
 
@@ -192,33 +175,37 @@
   <section class="quick-info element-animate" data-animate-effect="fadeInLeft">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 bgcolor">
-          <div class="row">
-            <div class="col-md-4 mb-3">
-              <div class="media">
-                <div class="mr-3 icon-wrap"><span class="icon ion-ios-telephone"></span></div>
-                <div class="media-body">
-                  <h5>+421 915 281 678</h5>
-                  <p>Bez objednávania (na počkanie)</p>
-                </div>
+        <div class="col-lg-6 col-md-8 mx-auto bgcolor text-white">
+          <h4 class="text-center text-white mb-4"><span class="icon ion-android-time mr-2" style="color: #ff6d24;"></span>Otváracie hodiny</h4>
+          <div class="row px-1">
+            <div class="col-12">
+              <div class="d-flex justify-content-between py-2" style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                <span class="text-muted">Pondelok</span>
+                <span class="text-muted">Zatvorené</span>
               </div>
-            </div>
-            <div class="col-md-4 mb-3">
-              <div class="media">
-                <div class="mr-3 icon-wrap"><span class="icon ion-location"></span></div>
-                <div class="media-body">
-                  <h5>Gustáva Hermana 1</h5>
-                  <p>054 01 Levoča, Slovensko</p>
-                </div>
+              <div class="d-flex justify-content-between py-2" style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                <span>Utorok</span>
+                <strong>9:00 - 17:00</strong>
               </div>
-            </div>
-            <div class="col-md-4 mb-3">
-              <div class="media">
-                <div class="mr-3 icon-wrap"><span class="icon ion-android-time"></span></div>
-                <div class="media-body">
-                  <h5>Ut - Pia: 9:00 - 17:00</h5>
-                  <p>Sobota: 9:00 - 12:00 <br> Ne - Po: Zatvorené</p>
-                </div>
+              <div class="d-flex justify-content-between py-2" style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                <span>Streda</span>
+                <strong>9:00 - 17:00</strong>
+              </div>
+              <div class="d-flex justify-content-between py-2" style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                <span>Štvrtok</span>
+                <strong>9:00 - 17:00</strong>
+              </div>
+              <div class="d-flex justify-content-between py-2" style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                <span>Piatok</span>
+                <strong>9:00 - 17:00</strong>
+              </div>
+              <div class="d-flex justify-content-between py-2" style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                <span>Sobota</span>
+                <strong>9:00 - 12:00</strong>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <span class="text-muted">Nedeľa</span>
+                <span class="text-muted">Zatvorené</span>
               </div>
             </div>
           </div>
@@ -283,20 +270,10 @@
         </div>
 
         <div class="col-md-6 pl-md-5">
-          <h3>Kontaktujte nás</h3>
-          <p class="mb-4">Fungujeme bez objednávania – stačí prísť. V prípade otázok nás môžete kontaktovať telefonicky.
-            Tešíme sa na vašu návštevu!</p>
+          <h3>Kontakt &amp; Informácie</h3>
+          <p class="mb-4">Fungujeme bez objednávania – stačí kedykoľvek prísť počas otváracích hodín. Tešíme sa na vašu návštevu!</p>
 
           <ul class="list-unstyled">
-            <li class="mb-3 d-flex align-items-center">
-              <span class="mr-3 text-primary" style="font-size: 1.5rem;"><span
-                  class="icon ion-ios-telephone"></span></span>
-              <div>
-                <strong>Telefón:</strong><br>
-                <a href="tel:+421915281678" style="font-size: 1.2rem; font-weight: bold; color: #ff6d24;">+421 915 281
-                  678</a>
-              </div>
-            </li>
             <li class="mb-3 d-flex align-items-center">
               <span class="mr-3 text-primary" style="font-size: 1.5rem;"><span
                   class="icon ion-ios-location"></span></span>
