@@ -7,7 +7,7 @@
     <meta name="description" content="Tomi Štúdio - profesionálne pánske kaderníctvo a holičstvo v Levoči. Ponúkame moderné strihy, úpravu brady a prémiovú starostlivosť.">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin-ext" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&subset=latin-ext&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -21,17 +21,18 @@
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
     <style>
-      .hero-title {
-        font-family: 'Kaushan Script', cursive;
-        font-size: 90px;
+      .site-hero.overlay h1.hero-title {
+        font-family: 'Kaushan Script', cursive !important;
+        font-size: 85px !important;
         color: #fff !important;
-        line-height: 1.2;
-        margin-bottom: 20px;
-        text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+        line-height: 1.2 !important;
+        margin-bottom: 20px !important;
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.5) !important;
+        text-transform: none !important; /* Keep original casing */
       }
       @media (max-width: 768px) {
-        .hero-title {
-          font-size: 55px;
+        .site-hero.overlay h1.hero-title {
+          font-size: 45px !important;
         }
       }
       .news-card {
