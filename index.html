@@ -349,61 +349,49 @@
   <script src="js/magnific-popup-options.js"></script>
   <script src="js/main.js"></script>
 
-  <!-- Script to dynamically load announcements -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const container = document.getElementById("announcements-container");
-      const loading = document.getElementById("announcements-loading");
+  <!-- Script to dynamically load announcements from Firebase Firestore -->
+  <script type="module">
+    import { db } from './js/firebase-config.js';
+    import { collection, getDocs, query, orderBy } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js';
 
-      // Load from localStorage for mockup fallback, we will update this to Firebase/GCP step-by-step
-      const localAnnouncements = localStorage.getItem("tomi_studio_announcements");
-      let announcements = [];
+    const container = document.getElementById("announcements-container");
+    const loading = document.getElementById("announcements-loading");
 
-      if (localAnnouncements) {
-        try {
-          announcements = JSON.parse(localAnnouncements);
-        } catch (e) {
-          console.error(e);
+    async function initAnnouncements() {
+      if (!container) return;
+      try {
+        const q = query(collection(db, "announcements"), orderBy("createdAt", "desc"));
+        const querySnapshot = await getDocs(q);
+
+        // Hide loading
+        if (loading) loading.style.display = "none";
+
+        if (querySnapshot.empty) {
+          container.innerHTML = `<div class="text-center text-muted py-4">Momentálne nie sú k dispozícii žiadne oznamy.</div>`;
+          return;
         }
-      } else {
-        // Default mock announcements
-        announcements = [
-          {
-            id: "1",
-            date: new Date().toLocaleDateString("sk-SK"),
-            title: "Zmena otváracích hodín počas sviatkov",
-            content: "Vážení zákazníci, počas nadchádzajúcich sviatkov budeme mať zatvorené. Opäť sa na vás tešíme v bežných otváracích hodinách od pondelka. Prajeme vám príjemné prežitie sviatkov."
-          },
-          {
-            id: "2",
-            date: new Date().toLocaleDateString("sk-SK"),
-            title: "Tomi Štúdio - Nová webová stránka",
-            content: "Spustili sme pre vás novú, modernú webovú prezentáciu! Nájdete tu vždy aktuálne otváracie hodiny, dôležité oznamy, zoznam služieb a presnú polohu na mape."
-          }
-        ];
-        localStorage.setItem("tomi_studio_announcements", JSON.stringify(announcements));
-      }
 
-      // Hide loading
-      if (loading) loading.style.display = "none";
-
-      if (announcements.length === 0) {
-        container.innerHTML = `<div class="text-center text-muted py-4">Momentálne nie sú k dispozícii žiadne oznamy.</div>`;
-        return;
-      }
-
-      // Render announcements
-      announcements.forEach(item => {
-        const card = document.createElement("div");
-        card.className = "news-card";
-        card.innerHTML = `
+        // Render announcements
+        querySnapshot.forEach((docSnap) => {
+          const item = docSnap.data();
+          const card = document.createElement("div");
+          card.className = "news-card";
+          card.innerHTML = `
             <div class="news-date">${item.date}</div>
             <div class="news-title">${item.title}</div>
             <div class="news-content">${item.content.replace(/\n/g, '<br>')}</div>
           `;
-        container.appendChild(card);
-      });
-    });
+          container.appendChild(card);
+        });
+
+      } catch (err) {
+        console.error("Error loading announcements from Firestore:", err);
+        if (loading) loading.style.display = "none";
+        container.innerHTML = `<div class="text-center text-danger py-4">Nepodarilo sa načítať aktuálne oznamy. Skontrolujte prosím pripojenie.</div>`;
+      }
+    }
+
+    initAnnouncements();
   </script>
 </body>
 
